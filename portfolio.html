@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Neonderthaw&family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    /> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  
+  <body>
+    <header class="header">
+      <div class="container-h nav-main">
+      <a class="logo" href=""><span>Web</span>Studio</a>
+      <nav>
+        <ul class="pf-list">
+          <li class="list"><a class="link " href="./index.html">Студия</a></li>
+          <li class="list">
+            <a class="link current" href=>Портфолио</a>
+          </li>
+          <li class="list"><a class="link" href="">Контакты</a></li>
+        </ul>
+      </nav>
+     <div class="nav-flex">
+      <a class="kontakt" href="mailto:info@devstudio.com"><svg class="kontakt-icon" width="16" height="12">
+        <use href="./images/sprite.svg#icon-envelope"></use></svg>info@devstudio.com</a>
+      <a class="kontakt" href="tel:+380961111111"><svg class="kontakt-icon" width="10" height="16">
+        <use href="./images/sprite.svg#icon-smartphone"></use>        
+      </svg>38 096 111 11 11</a>
+      </div>
+      </div>
+    </header>
+    <main>
+      <!-- создаю список кнопок для блока фильтер -->
+      <section class="portfolio">
+        <div class="container">
+         <div class="frame">  
+          <ul class="filter">
+        <li class="list-button"><button class="button" type="button">Все</button></li>
+        <li class="list-button"><button class="button" type="button">Веб-сайты</button></li>
+        <li class="list-button"><button class="button" type="button">Приложения</button></li>
+        <li class="list-button"><button class="button" type="button">Дизайн</button></li>
+        <li class="list-button"><button class="button" type="button">Маркетинг</button></li>
+      </ul>
+      </div>  
+      <!-- создаю секцию портфолио -->
+      <!-- <h1>Портфолио</h1> Логический заголовок -->
+     <ul class="list-project">
+         <li class="item"> 
+             <a class=" link-projekt" href="">
+              <div class="move-up">  
+            <img
+              src="./images/tehcrack.jpg"
+              alt="Технокряк"
+              width="370"
+              height="294"
+            />
+            <p class="desc-card">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p></div>
+            <div class="desc-item"> 
+            <h2 class="title">Технокряк</h1>
+            <p class="desc">Веб-сайт</p></div></a>
+            
+          </li>
+          
+          <li class="item"> <a class="link-projekt" href="">
+            <div class="move-up">
+            <img
+              src="./images/new-orlean.jpg"
+              alt="Постер"
+              width="370"
+              height="294"
+            />  <p class="desc-card">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p></div><div class="desc-item">
+            <h2 class="title">Постер New Orlean vs Golden Star</h1>
+            <p class="desc">Дизайн</p></div></a>
+          </li>
+          <li class="item"> <a class="link-projekt" href="">
+           <div class="move-up"> <img
+              src="./images/seafood.jpg"
+              alt="Морепродукты"
+              width="370"
+              height="294"
+            />  <p class="desc-card">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p></div><div class="desc-item">
+            <h2 class="title">Ресторан Seafood</h1>
+            <p class="desc">Приложение</p></div></a>
+          </li>
+          <li class="item"> <a class="link-projekt" href="">
+           <div class="move-up"> <img
+              src="./images/prime.jpg"
+              alt="Наушники"
+              width="370"
+              height="294"
+            />  <p class="desc-card">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p></div><div class="desc-item">
+            <h2 class="title">Проект Prime</h1>
+            <p class="desc">Маркетинг</p></div></a>
+          </li>
+          
+          <li class="item"> <a class="link-projekt" href="">
+            <div class="move-up"><img
+              src="./images/boxes.jpg"
+              alt="Посылка"
+              width="370"
+              height="294"
+            />  <p class="desc-card">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p></div><div class="desc-item">
+            <h2 class="title">Проект Boxes</h1>
+            <p class="desc">Приложение</p></div></a>
+          </li>
+          <li class="item"> <a class="link-projekt" href="">
+            <div class="move-up"><img
+              src="./images/borders.jpg"
+              alt="Интерпритация границ"
+              width="370"
+              height="294"
+            />  <p class="desc-card">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p></div><div class="desc-item">
+            <h2 class="title">Inspiration has no Borders</h1>
+            <p class="desc">Веб-сайт</p></div></a>
+          </li>
+          <li class="item"> <a class="link-projekt" href="">
+            <div class="move-up"><img
+              src="./images/limited-edition.jpg"
+              alt="Ограниченное издание"
+              width="370"
+              height="294"
+            />  <p class="desc-card">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p></div><div class="desc-item">
+            <h2 class="title">Издание Limited Edition</h1>
+            <p class="desc">Дизайн</p></div></a>
+          </li>
+          <li class="item"> <a class="link-projekt" href="">
+            <div class="move-up"><img src="./images/lab.jpg" alt="Лейбел" width="370" height="294" />
+             <p class="desc-card">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p></div> <div class="desc-item"><h2 class="title">Проект LAB</h2>
+            <p class="desc">Маркетинг</p></div></a>
+          </li>
+          <li class="item"> <a class="link-projekt" href="">
+            <div class="move-up"><img
+              src="./images/growing-bussines.jpg"
+              alt="Бизнес рост"
+              width="370"
+              height="294"
+            /> <p class="desc-card">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p></div> <div class="desc-item">
+            <h2 class="title">Growing Business</h1>
+            <p class="desc">Приложение</p></div></a>
+          </li>
+        </ul>
+        </div>
+      </section>
+    </main>
+  </body>
+
+ <footer class="footer">
+      <div class="container">
+        <div class="right-flex">
+        <div class="otstup">
+          <a class="logo-footer" href=""><span>Web</span>Studio</a>
+       <address class="address">г. Киев, пр-т Леси Украинки, 26</address>
+      <address class="address-kontakt">
+        <a class="info" href="mailto:info@devstudio.com">info@devstudio.com</a><br />
+        <a class="info" href="tel:+380961111111">38 096 111 11 11</a>
+      </address>
+      </div>
+      <div class="footer-flex">
+       <p class="push-net">Присоединяйтесь</P>
+       <ul class="footer-list"><li class="footer-link"><a class="link-icon" href=""><svg class="link-svg" width="20" height="20"><use href="./images/sprite.svg#icon-instagram-footer"></use></svg></a></li>
+       <li class="footer-link"><a class="link-icon" href=""><svg class="link-svg" width="20" height="20"><use href="./images/sprite.svg#icon-group-footer"></use></svg></a></li>
+       <li class="footer-link"><a class="link-icon" href=""><svg class="link-svg" width="20" height="20"><use href="./images/sprite.svg#icon-facebook-footer"></use></svg></a></li>
+       <li class="footer-link"><a class="link-icon" href=""><svg class="link-svg" width="20" height="20"><use href="./images/sprite.svg#icon-linkedin-footer"></use></svg></a></li></ul>
+      </div>
+       <!-- начинаю делать форму на подписку -->
+        <form class="subscribe" action="" >
+          <label class="sign-up" for="email" name="user email">Подпишитесь на рассылку</label>
+         <div> <input class="put-sign" id="email" type="email" placeholder="E-mail">
+          <button class="sign-up-button" type="submit">Подписаться<svg class="send-svg" width="24" height="24">
+            <use href="./images/sprite.svg#icon-send"></use></svg></button></div>
+        </form>
+      </div>
+        </div>
+      
+    </footer>
+</html>
