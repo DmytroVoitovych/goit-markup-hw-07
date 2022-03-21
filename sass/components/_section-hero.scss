@@ -1,9 +1,8 @@
 /* начинаю работу над оформлением героя */
 .hero {
+  @extend %auto-margin;
   max-width: 1600px;
   height: 600px;
-  margin-left: auto;
-  margin-right: auto;
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: #c4c4c4;
@@ -16,21 +15,23 @@
   background-size: auto;
   background-repeat: no-repeat;
   text-align: center;
+
+  &__title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--white-color);
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
 }
-.title-hero {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--white-color);
-  margin: 0 auto;
-  margin-bottom: 30px;
-}
+
 .button-hero {
   color: var(--white-color);
-  background: var(--akcent-color);
+  background-color: var(--akcent-color);
   font-family: Roboto;
   font-weight: 700;
   font-size: 16px;
@@ -40,11 +41,11 @@
   border-radius: 4px;
   cursor: pointer;
   padding: 10px 32px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  /* border: 0; */
-}
+  transition: background-color var(--kubik);
+  border: 0;
 
-.button-hero:hover,
-.button-hero:focus {
-  background-color: #188ce8;
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
 }
