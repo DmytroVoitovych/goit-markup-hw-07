@@ -1,11 +1,10 @@
 /* Начинаю оформлять внутрению секцию постоянных клиентов */
 .client-often {
   /* background: var(--white-color); */
-  padding-top: 94px;
-  padding-bottom: 94px;
+  @extend %basic-padding;
 }
 
-.title-client {
+.client-often__title {
   margin: 0;
   margin-bottom: 50px;
   font-weight: 700;
@@ -15,40 +14,32 @@
   letter-spacing: 0.03em;
 }
 /* секция постоянных клиентов */
-.list-client {
+.client-often__list {
   display: flex;
-  margin: 0;
-  padding: 0;
+  @extend %reset-style;
   justify-content: space-between;
 }
 
-.icon-client {
-  justify-content: center;
-  display: flex;
-  align-items: center;
-
+.client-often__icon {
+  @include centerFlex();
   text-align: center;
   list-style: none;
   /* width: 170px;
   height: 92px; */
-}
+  a {
+    @include centerFlex();
+    width: 170px;
+    height: 92px;
+    fill: #afb1b8;
+    border-radius: 4px;
+    border: 1px solid #afb1b8;
+    transition: border var(--kubik), fill var(--kubik);
+  }
 
-.icon-client a {
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  width: 170px;
-  height: 92px;
-  fill: #afb1b8;
-  border-radius: 4px;
-  border: 1px solid #afb1b8;
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.icon-client a:hover,
-.icon-client a:focus {
-  fill: var(--akcent-color);
-  stroke: transparent;
-  border: 1px solid var(--akcent-color);
+  a:hover,
+  a:focus {
+    fill: var(--akcent-color);
+    stroke: transparent;
+    border: 1px solid var(--akcent-color);
+  }
 }

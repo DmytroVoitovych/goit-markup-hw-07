@@ -1,23 +1,37 @@
 /* Начинаю оформлять секцию "Наша команда" */
 .our-team {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  @extend %basic-padding;
   background: #f5f4fa;
+
+  .title-section {
+    padding: 0;
+  }
 }
-.li-team {
+
+.our-team__li {
   background-color: var(--white-color);
   width: 270px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  .our-team__disc {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }
-.list-img .li-team:not(:last-child) {
-  margin-right: 30px;
+.our-team__list-img {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding-left: 0;
 }
-.our-team .title-section {
-  padding: 0;
-}
-.title-team {
+
+.our-team__title-team {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -26,7 +40,7 @@
   margin-bottom: 10px;
   text-align: center;
 }
-.disc-team {
+.our-team__disc-team {
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
@@ -35,53 +49,37 @@
   margin-bottom: 16px;
   text-align: center;
 }
-.li-team .disc {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
 
 /* начинаю офрмлять иконки в карточке */
-.team-link {
-  display: flex;
+.our-team__link {
+  @include centerFlex();
   list-style: none;
-  /* width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.1); */
-  justify-content: center;
-  align-items: center;
   cursor: pointer;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
-.link-icon-team {
-  display: flex;
+
+.our-team__link-icon {
+  @include centerFlex();
   width: 44px;
   height: 44px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
-  justify-content: center;
-  align-items: center;
   fill: #afb1b8;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--kubik), fill var(--kubik);
+
+  &:hover,
+  &:focus {
+    background-color: var(--akcent-color);
+    fill: var(--white-color);
+    stroke: transparent;
+  }
 }
 
-.team-list {
-  padding: 0;
-  margin: 0;
+.our-team__list-icon {
+  @extend %reset-style;
   display: flex;
   justify-content: center;
-}
-.team-link:not(:last-child) {
-  margin-right: 10px;
-}
-
-/* .link-svg-team {
-  fill: #afb1b8;
-} */
-
-.link-icon-team:hover,
-.link-icon-team:focus {
-  background-color: var(--akcent-color);
-  fill: var(--white-color);
-  stroke: transparent;
 }
